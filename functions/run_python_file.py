@@ -42,7 +42,7 @@ schema_run_python_file = types.FunctionDeclaration(
                 description="The content to be written to the file provided in file path.",
                 items=types.Schema(
                     type=types.Type.STRING,
-                    description="An argument passed to the python script to be executed"
+                    description="An argument passed to the python script to be executed. Should be of the form a op b, where a and be are values provided by user and op is one of +,-,*,/"
                 )
             )
         },
